@@ -13,10 +13,7 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:api')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
 
-Route::get('list-student-data', 'TestController@list');
-Route::post('insert-student-data', 'TestController@store');
-Route::get('get-second-highest-money', 'TestController@getSendHighestPocketmoney');

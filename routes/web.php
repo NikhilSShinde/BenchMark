@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('list-student-data', 'StudentController@index');
+Route::post('insert-student-data', 'StudentController@store');
+Route::get('get-second-highest-money', 'StudentController@getPocketMoney');

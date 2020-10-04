@@ -18,8 +18,13 @@ class CreateStudentTable extends Migration
             $table->string('first_name')->nullable();
             $table->string('last_name')->nullable();
             $table->string('email')->nullable();
-            $table->string('pocket_money')->nullable();
+            $table->double('pocket_money');
             $table->string('password')->nullable();
+            $table->string('age')->nullable();
+            $table->string('city')->nullable();
+            $table->string('state')->nullable();
+            $table->string('zip')->nullable();
+            $table->string('country')->nullable();
             $table->boolean('is_deleted')->default(0);
             $table->timestamps();
         });
